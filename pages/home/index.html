@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/globalStyles.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/buttons.css">
+    <link rel="stylesheet" href="../../styles/cards.css">
+    <link rel="stylesheet" href="../../styles/aside.css">
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <title>Webwomen</title>
     <meta
@@ -16,7 +21,94 @@
     />
 </head>
 <body>
-    <main></main>
+    <header>
+      <div class="background-img">
+        <div class="header-container">
+  
+          <nav>
+  
+            <img src="../../assets/img/logo.svg" alt="logo">
+            <h1 class="font-weight">Lugar de mulher é onde ela quiser!</h1>
+            <h2>Está procurando oportunidades de estágio, emprego ou bolsas de estudo? 
+              Ou até mesmo oportunidades para atender eventos de tecnologia no Brasil e ao redor do mundo?</h2> 
+            <h2 class="font-weight"> Confere aqui embaixo o que temos pra você!</h2>
+  
+            <a href="#jobs" id="btn-section-jobs">Ir para seção das vagas</a>
+          </nav>
+  
+        </div>
+      </div>
+     </header>
+    <main class="container">
+      <section id="jobs">
+        <h2>Vagas</h2>
+        <div class="card__container">
+          <ul class="card__jobs">
+            <!-- <li class="card__jobs_content">
+              <h2>Pessoa desenvolvedora front-end - React JS</h2>
+              <div class="card__jobs__features">
+                <span>kenzie</span>
+                <span>Curitiba</span>
+              </div>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s</p>
+              <span class="card__category">Home Office</span>
+              <button class="btn_register">Candidatar</button>
+            </li>
+            <li class="card__jobs_content">
+              <h2>Pessoa desenvolvedora front-end - React JS</h2>
+              <div class="card__jobs__features">
+                <span>kenzie</span>
+                <span>Curitiba</span>
+              </div>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s</p>
+              <span class="card__category">Home Office</span>
+              <button class="btn_register">Candidatar</button>
+            </li>
+            <li class="card__jobs_content">
+              <h2>Pessoa desenvolvedora front-end - React JS</h2>
+              <div class="card__jobs__features">
+                <span>kenzie</span>
+                <span>Curitiba</span>
+              </div>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s</p>
+              <span class="card__category">Home Office</span>
+              <button class="btn_register">Candidatar</button>
+            </li> -->
+          </ul>
+          <aside>
+            <div class="aside__header">
+              <h3>Vagas selecionadas</h3>
+
+            </div>
+            
+            <ul class="selected_jobs">
+              <!-- <li>
+                <span>Você ainda não aplicou para nenhuma vaga</span>
+              </li> -->
+              <!-- <li>
+                <div class="selected__jobs__btn">   
+                  <h2>Pessoa desenvolvedora front-end - React JS</h2>
+                  <button class="btn-remove-card"><img src="../../assets/img/trash.png" alt="trash"></button>
+                </div>
+                <div class="selected_jobs__enterprise">
+                  <span>Kenzie</span>
+                  <span>Spost</span>
+                </div>
+              </li> -->
+            </ul>
+          </aside>
+    
+        </div>
+    
+    
+      </section>
+    
+    
+    
+    </main>
     <script src="jobsData.js"></script>
     <script src="index.js"></script>
 </body>

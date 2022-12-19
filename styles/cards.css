@@ -1,0 +1,64 @@
+.card__container{
+    padding: 2rem;
+}
+
+.card__jobs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card__jobs_content{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-grey-6);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    height: 33rem;
+    gap: 2rem;
+    position: relative;
+}
+
+.card__jobs_content h2{
+    font-size: var(--title-4);
+    line-height: 2.063rem;
+}
+
+.card__jobs_content p{
+    font-size: var(--text-2);
+    line-height: 2rem;
+}
+
+.card__category{
+    background-color: var(--color-grey-3);
+    width: 8rem;
+    height: 1.5rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.card__jobs__features{
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    gap: 3rem;
+    padding: 0.25rem 0.75rem;
+  
+}
+
+@media(min-width: 900px) {
+
+
+    .card__container{
+        display: flex;
+        gap: 2rem;
+        height: auto;
+        width: 100%;
+    }
+
+    .card__jobs_content { 
+        gap: 1.5rem;
+        height: 50%;
+    }
+    
+}

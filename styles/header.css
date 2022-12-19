@@ -1,0 +1,49 @@
+header{
+    background-image: url("../../assets/img/foto-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 44rem;
+}
+.header-container{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.background-img{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+nav img{
+    width: 10rem;
+}
+
+.font-weight{
+    font-weight: 600;
+}
+
+nav h1{
+    font-size: var(--title-2);
+    line-height: 3rem;
+    color: var(--color-grey-3);
+}
+
+nav h2{
+    font-size: var(--title-6);
+    line-height: 2rem;
+    color: var(--color-grey-6);
+    font-weight: normal;
+}
