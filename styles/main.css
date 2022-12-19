@@ -19,5 +19,8 @@
         display: flex;
         width: 100%;
     }
+    #jobs h2{
+        margin-left: 1rem;
+    }
 
 }
