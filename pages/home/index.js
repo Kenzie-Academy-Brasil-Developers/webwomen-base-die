@@ -114,13 +114,20 @@ function creatingCardsAside (list) {
     buttonRemove.id = list.id
     buttonRemove.addEventListener("click", (event)=>{
         console.log(event.target.id)
-        let removed = arrayItens.findIndex(item => item.id == event.target.id)
-    
-        arrayItens.splice(removed, 1)
-        localStorageItems(arrayItens)
-        renderCardsAside(arrayItens)
+        let btn = document.querySelectorAll(".btn_register")
+        btn.forEach((btnSingle)=>{
+            if (btnSingle.id == event.target.id) {
+
+                btnSingle.innerText = "Candidatar"
+            }
+            let removed = arrayItens.findIndex(item => item.id == event.target.id)
+        
+            arrayItens.splice(removed, 1)
+            localStorageItems(arrayItens)
+            renderCardsAside(arrayItens)
+        })
     })
-    imgTrash.src = "../../assets/img/trash.png"
+    imgTrash.src = "./assets/img/trash.png"
     imgTrash.alt = "button"
     selectedJobsEnterprise.classList.add("selected_jobs__enterprise")
     spanEnterprise.innerText = list.enterprise
